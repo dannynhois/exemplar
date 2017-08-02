@@ -45,14 +45,31 @@
     <div class="container-fluid">
       <!-- navbar -->
       <div class="row">
-        <div id='notes' class="col-md-3">
+         <div id='notes' class="col-md-3">
           <h4 class='text-center'>Notes</h4>
+          <form id="notes" action="mailto:???" method="post" enctype="text/plain">
+            <div class="form-group row">
+              <label for="email-input" class="col-2 col-form-label">Email</label>
+                <div class="col-10">
+                  <input class="form-control" type="email">
+                </div>
+              <br>
+                <div class="input-group">
+                    <span class="input-group-addon"></span>
+                    <textarea class="form-control" rows="20" id="comment"></textarea>
+                </div>
+            </div> 
+            <button type="submit" class="btn btn-primary">Send Notes</button>
+          </form>
         </div>
 
-        <div id='article-current' class="col-md-6">
-          <h4 class='text-center'>Current Article</h4>
-          <!--below div adds iframe-->
-          <div id="ytNew"></div>
+        <div class="col-md-6">
+          <h4>Current Article</h4>
+          <p id="article-current">
+          <!--below p adds iframe-->
+          <h4>Topic Video</h4>
+          <p id="ytNew"></p>
+          <h6>Press play to watch the video. Press ►| to watch the next video and ◄| for the previous video.</h6>
         </div>
         
         <div id='article-list' class="col-md-3">

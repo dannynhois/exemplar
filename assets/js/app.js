@@ -42,7 +42,7 @@ divArticleList.on('click', '.article-title', function(){
   displayCurrentArticle(articleList[currentIndex]);
 })
 
-//*********************************************get button input********************
+
 $("#searchButton").on("click", function(event) {
 // prevent form from trying to submit/refresh the page
 event.preventDefault();
@@ -53,7 +53,7 @@ var searchTerm = $("input").val().trim();
 var iframe = '<iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/?listType=search&list='+searchTerm+'"frameborder="0" allowfullscreen></iframe>'
 //console.log(iframe1);
 //add iframe to html
-$("#ytNew").html(iframe);
+$("#ytNew").append(iframe);
 });
 
 
