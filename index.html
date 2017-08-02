@@ -47,20 +47,13 @@
       <div class="row">
          <div id='notes' class="col-md-3">
           <h4 class='text-center'>Notes</h4>
-          <form id="notes" action="mailto:???" method="post" enctype="text/plain">
-            <div class="form-group row">
-              <label for="email-input" class="col-2 col-form-label">Email</label>
-                <div class="col-10">
-                  <input class="form-control" type="email">
-                </div>
-              <br>
-                <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <textarea class="form-control" rows="20" id="comment"></textarea>
-                </div>
-            </div> 
-            <button type="submit" class="btn btn-primary">Send Notes</button>
-          </form>
+          <form id="contact" action="mailto:your email" method="post" enctype="text/plain">
+          <h6>Click the Button Below to Email Notes</h6>
+            <textarea class="formfield" type="text" name="notes" rows="30" cols="40">
+            </textarea>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+          </form>         
         </div>
 
         <div class="col-md-6">

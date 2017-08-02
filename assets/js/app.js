@@ -55,6 +55,4 @@ var iframe = '<iframe id="ytplayer" type="text/html" width="720" height="405" sr
 //add iframe to html
 $("#ytNew").append(iframe);
 });
-
-
   
