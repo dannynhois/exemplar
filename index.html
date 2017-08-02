@@ -7,6 +7,9 @@
     <!-- materialize link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+     <script src="https://apis.google.com/js/api.js"></script><!--**********-->
+    <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
+
 
   </head>
   <body>
@@ -29,9 +32,10 @@
           
           <form class="navbar-form navbar-left">
             <div class="form-group">
+            <label for="input"></label>
               <input type="text" class="form-control" placeholder="Search">
             </div>
-            <button type="submit" class="btn btn-default">Search</button>
+            <button id="newButton"  type="submit" class="btn btn-default">Search</button>
           </form>
 
         </div><!-- /.navbar-collapse -->
@@ -47,8 +51,19 @@
 
         <div id='article-current' class="col-md-6">
           <h4 class='text-center'>Current Article</h4>
-        </div>
+        
+        <!--<form>
+        <div class="form-group">
+              <label for="comment-input">Search for Videos Related to Your Subject or Author</label>
+                <textarea class="form-control" id="subject-input" rows="1"></textarea>
+            <button id="newButton" class="btn btn-default">Submit</button>
+          </div>
+        </form>-->
 
+        <div id="player"></div>
+       
+        </div>
+        
         <div id='article-list' class="col-md-3">
           <h4 class='text-center'>Table of Contents</h4>
         </div>
@@ -64,6 +79,7 @@
     <script src="./assets/js/faker.min.js" charset="utf-8"></script>
     <script src="./assets/js/annotator-full.min.js" charset="utf-8"></script>
     <script src="./assets/js/app.js" charset="utf-8"></script>
+
 
   </body>
 </html>
