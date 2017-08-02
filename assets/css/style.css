@@ -14,3 +14,11 @@
   cursor: hand;
   cursor: pointer;
 }
+
+iframe {
+    width: 480px;
+    height: 270px;
+    margin: 0 auto;
+    background-color: #777;
+    display:block;
+}
